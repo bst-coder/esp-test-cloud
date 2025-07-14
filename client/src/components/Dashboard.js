@@ -31,7 +31,7 @@ const Dashboard = () => {
     }, REFRESH_INTERVAL);
 
     return () => clearInterval(interval);
-  }, [REFRESH_INTERVAL]);
+  }, [REFRESH_INTERVAL, fetchDevices, selectedDevice]);
 
   // Fetch device data when selected device changes
   useEffect(() => {

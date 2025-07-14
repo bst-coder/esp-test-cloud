@@ -6,7 +6,6 @@ const API_BASE_URL = process.env.NODE_ENV === 'production'
   : process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 const API_TIMEOUT = parseInt(process.env.REACT_APP_API_TIMEOUT) || 10000;
-const RETRY_ATTEMPTS = parseInt(process.env.REACT_APP_RETRY_ATTEMPTS) || 3;
 
 console.log(`🔗 API Base URL: ${API_BASE_URL}`);
 console.log(`⏱️ API Timeout: ${API_TIMEOUT}ms`);
