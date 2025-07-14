@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Environment-based API configuration
 const API_BASE_URL = process.env.NODE_ENV === 'production' 
-  ? `http://${window.location.hostname}:5000/api`
+  ? '/api'
   : process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
 
 const API_TIMEOUT = parseInt(process.env.REACT_APP_API_TIMEOUT) || 10000;
